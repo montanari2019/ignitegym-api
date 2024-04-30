@@ -24,7 +24,7 @@ class UsersController {
       password: hashedPassword
     });
 
-    return response.status(201).json();
+    return response.status(201).json({message: "Usuário criado com successo"});
   }
 
   async update(request, response) {
